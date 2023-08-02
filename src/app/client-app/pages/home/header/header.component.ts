@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  background: string = 'assets/imgs/home/header2.jpg';
+  weather: string = 'assets/imgs/weather/09d.png';
+
 }

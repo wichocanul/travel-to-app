@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: primary;
+  src: url(assets/fonts/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: secondary;
+  src: url(assets/fonts/Quicksand-VariableFont_wght.ttf);
+}
+
+*{
+  width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: primary;
+}
+
+p {
+  font-family: secondary;
+}
+
+.container-full {
+  width: 100%;
+}
