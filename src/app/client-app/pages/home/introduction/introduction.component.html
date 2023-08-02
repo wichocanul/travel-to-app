@@ -1,0 +1,79 @@
+<div class="container">
+  <h2>¡Un Encantador Pueblo Mágico en el Corazón de México!</h2>
+
+  <p class="description">Un pintoresco y encantador Pueblo Mágico ubicado en el estado de Puebla. Este destino turístico ha cautivado a visitantes de todas partes con su rica cultura, tradiciones ancestrales y paisajes naturales impresionantes. Rodeado por majestuosas montañas y frondosos bosques.</p>
+
+  <p class="description">La artesanía de Chignahuapan también es famosa en todo el país. Los hábiles artesanos locales crean hermosas esferas navideñas, que se han convertido en el símbolo distintivo de este pueblo. Hechas a mano con maestría.</p>
+
+  <div class="details">
+
+    <div class="textDetails">
+      <button
+        (click)="statusDetail($event, 0)"
+        class="tourism activeDetails"
+        #asMenuButtons
+        value="tourism"
+      >
+        Turismo
+      </button>
+
+      <button
+        (click)="statusDetail($event, 1)"
+        class="events"
+        #asMenuButtons
+        value="events"
+      >
+        Eventos
+      </button>
+
+      <button
+        (click)="statusDetail($event, 2)"
+        class="lodging"
+        #asMenuButtons
+        value="lodging"
+      >
+        Hospedajes
+      </button>
+
+      <button
+      (click)="statusDetail($event, 3)"
+        class="restaurant"
+        #asMenuButtons
+        value="restaurant"
+      >
+        Restaurantes
+      </button>
+
+      <button
+        (click)="statusDetail($event, 4)"
+        class="booking"
+        #asMenuButtons
+        value="booking"
+      >
+        Reserva
+      </button>
+    </div>
+
+    <div class="contentDetails">
+      <div class="text">
+        <h3>{{ titleDetail }}</h3>
+        <div class="imagePhone">
+          <img [src]="imgDetail" alt="">
+        </div>
+        <p>{{ desciptionDetail }}</p>
+        <button [ngStyle]="{'background': colorDetail}">Mostrar Mas</button>
+      </div>
+      <div class="image">
+        <img [src]="imgDetail" alt="">
+      </div>
+    </div>
+
+    <!-- <p>Puedes visitar Chignahuapan cualquier dia del año pero te recomendamos hacerlo en meses de octubre a diciembre ya que en estas fechas es cuando hay mayor actividad, ya que se realiza la feria del pueblo venta de esferas.</p>
+
+    <p>Si estas interesado de conocer este hermoso pueblito, aqui podras encontrar los lugares que puedes visitar al igual que hospedajes, restaurantes y eventos, y si quieres no preocuparte por nada, nosotros podemos planear tu viaje reservando todo lo que quieras.</p> -->
+
+
+
+  </div>
+
+</div>

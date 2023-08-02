@@ -1,0 +1,220 @@
+h2 {
+  width: auto;
+  font-weight: lighter;
+  font-size: 2rem;
+  margin-top: 60px;
+  margin-bottom: 15px;
+}
+
+.description {
+  text-align: justify;
+  margin-bottom: 5px;
+}
+
+.details {
+  margin-top: 40px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.textDetails {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textDetails button {
+  width: auto;
+  background: #dfdfdf;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 10px;
+  font-size: .9rem;
+  font-family: secondary;
+  cursor: pointer;
+  box-shadow: -2px 2px 4px #646464;
+  transition: .3s ease all;
+}
+
+.textDetails button:hover {
+  box-shadow: none;
+}
+
+.textDetails .tourism:hover {
+  background: #5A1080;
+  color: #fff;
+}
+
+.textDetails .events:hover {
+  background: #26A52F;
+  color: #fff;
+}
+
+.textDetails .lodging:hover {
+  background: #DA007F;
+  color: #fff;
+}
+
+.textDetails .restaurant:hover {
+  background: #EA7500;
+  color: #fff;
+}
+
+.textDetails .booking:hover {
+  background: #009CDE;
+  color: #fff;
+}
+
+.textDetails .activeDetails {
+  background: #5A1080;
+  color: #fff;
+  box-shadow: none;
+}
+
+.contentDetails {
+  width: 100%;
+  min-height: 300px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentDetails .text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentDetails h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.imagePhone {
+  display: none;
+}
+
+.contentDetails p {
+  width: 80%;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.contentDetails button {
+  width: auto;
+  margin-top: 15px;
+  padding: 10px;
+  box-shadow: -2px 2px 5px #646464;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: secondary;
+  transition: .3s ease all;
+}
+
+.contentDetails button:hover {
+  box-shadow: none;
+  background: #242424;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.contentDetails .image {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  width: 60%;
+}
+
+/* ============================================================
+TABLETS
+============================================================ */
+@media screen and (min-width: 601px) and (max-width: 912px) {
+  h2 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+  }
+  .description {
+    font-size: .9rem;
+  }
+}
+
+/* ============================================================
+PHONE
+============================================================ */
+@media screen and (max-width: 600px) {
+  h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: .7rem;
+  }
+  .details {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .textDetails {
+    width: auto;
+    max-width: 100%;
+    margin: auto;
+    overflow-x: scroll;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+  }
+  .textDetails button {
+    width: auto;
+    border-radius: 10px;
+    font-size: .6rem;
+    margin: 0 3px;
+  }
+  .contentDetails {
+    width: 100%;
+    min-height: 100px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contentDetails .text {
+    width: 100%;
+    display: flex;
+  }
+  .contentDetails h3 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+  }
+  .contentDetails p {
+    width: 90%;
+    text-align: justify;
+    font-size: .6rem;
+  }
+  .contentDetails button {
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: .5rem;
+  }
+  .contentDetails .image {
+    display: none;
+  }
+  .imagePhone {
+    display: block;
+    width: 20%;
+    margin-bottom: 5px;
+  }
+}

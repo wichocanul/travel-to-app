@@ -15,6 +15,12 @@
     padding: 0;
     border: 0;
     outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,4 +33,32 @@ p {
 
 .container-full {
   width: 100%;
+}
+
+.container {
+  padding: 0 10px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+/* ============================================================
+TABLETS
+============================================================ */
+@media screen and (min-width: 601px) and (max-width: 912px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}
+
+/* ============================================================
+PHONE
+============================================================ */
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 10px;
+  }
 }
