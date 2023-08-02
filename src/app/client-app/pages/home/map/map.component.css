@@ -1,0 +1,74 @@
+.sectionMap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.map {
+  width: 60%;
+  padding: 0 10px;
+}
+
+#map {
+  height: 480px;
+  width: auto;
+}
+
+.description {
+  width: 40%;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.description h3 {
+  width: auto;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
+.description p {
+  width: 90%;
+  margin: auto;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.description ul {
+  width: 90%;
+  margin: 20px auto;
+  list-style: none;
+}
+
+.description ul li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.description ul li img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.description button {
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+  font-family: secondary;
+  cursor: pointer;
+  background: #009CDE;
+  box-shadow: -2px 2px 5px #646464;
+  transition: .3s ease all;
+  color: #fff;
+}
+
+.description button:hover {
+  box-shadow: none;
+  border-radius: 3px;
+}

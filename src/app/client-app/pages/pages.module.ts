@@ -4,6 +4,7 @@ import { MainComponent } from './home/main/main.component';
 import { HeaderComponent } from './home/header/header.component';
 import { SharedModule } from '../shared/shared.module';
 import { IntroductionComponent } from './home/introduction/introduction.component';
+import { MapComponent } from './home/map/map.component';
 
 
 
@@ -11,7 +12,8 @@ import { IntroductionComponent } from './home/introduction/introduction.componen
   declarations: [
     MainComponent,
     HeaderComponent,
-    IntroductionComponent
+    IntroductionComponent,
+    MapComponent
   ],
   imports: [
     CommonModule,
