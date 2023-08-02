@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
+
 @font-face {
   font-family: primary;
   src: url(assets/fonts/Outfit-VariableFont_wght.ttf);
@@ -41,6 +43,22 @@ p {
   max-width: 1200px;
   margin: auto;
 }
+
+.leaflet-control-zoom, .leaflet-bar, .leaflet-control {
+  border: none !important;
+}
+
+div.leaflet-popup {
+  width: 500px!important;
+}
+
+.leaflet-popup-content-wrapper {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 
 /* ============================================================
