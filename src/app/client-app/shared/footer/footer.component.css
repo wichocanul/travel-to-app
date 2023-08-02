@@ -1,0 +1,16 @@
+.container-full {
+  width: 100%;
+  height: auto;
+  background: #1d1d1d;
+}
+
+.container {
+  padding: 10px;
+}
+
+.container p {
+  color: #fff;
+  text-align: center;
+  font-size: .6rem;
+  margin: 3px;
+}
