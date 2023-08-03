@@ -1,4 +1,5 @@
 .sectionMap {
+  margin-top: 70px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -9,6 +10,7 @@
 .map {
   width: 60%;
   padding: 0 10px;
+  order: 1;
 }
 
 #map {
@@ -21,6 +23,7 @@
   padding: 0 10px;
   display: flex;
   flex-direction: column;
+  order: 2;
 }
 
 .description h3 {
@@ -71,4 +74,94 @@
 .description button:hover {
   box-shadow: none;
   border-radius: 3px;
+}
+
+/* ============================================================
+TABLETS
+============================================================ */
+@media screen and (min-width: 601px) and (max-width: 912px) {
+  .sectionMap {
+    margin-top: 20px;
+  }
+  .map {
+    width: 55%;
+    padding: 0 10px;
+    order: 1;
+  }
+  .description {
+    width: 45%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+  .description ul {
+    margin: 5px auto;
+  }
+}
+
+/* ============================================================
+PHONE
+============================================================ */
+@media screen and (max-width: 600px) {
+  .sectionMap {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .map {
+    width: 100%;
+    padding: 0 10px;
+    order: 2;
+  }
+  .description {
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+
+  .description h3 {
+    border-top: 2px solid #444444;
+    padding-top: 5px;
+  }
+  .description p {
+    width: 95%;
+    margin: auto;
+    text-align: justify;
+    margin-bottom: 10px;
+    font-size:  .6rem;
+  }
+  .description ul {
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .description ul li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+  }
+  .description ul li img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  .description button {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    box-shadow: -2px 2px 5px #646464;
+    transition: .3s ease all;
+    color: #fff;
+  }
+  #map {
+    height: 250px;
+    width: auto;
+  }
 }
