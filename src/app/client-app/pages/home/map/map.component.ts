@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import * as L from 'leaflet';
+import { MapService } from 'src/app/client-app/services/map/map.service';
 
 @Component({
   selector: 'app-map',
@@ -8,7 +9,9 @@ import * as L from 'leaflet';
 })
 export class MapComponent {
 
-  map: any;
+  map: L.Map = {} as L.Map;
+
+  constructor( private mapService: MapService ) {}
 
   ngAfterViewInit() {
 
@@ -20,6 +23,12 @@ export class MapComponent {
       maxZoom: 20
     }).addTo(this.map);
 
+    this.getMarkers();
+
+  }
+
+  getMarkers() {
+    this.mapService.getAllPlaces();
   }
 
 }
