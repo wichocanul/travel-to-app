@@ -53,11 +53,32 @@ export class MapComponent {
         popupAnchor: [0, -32]
       });
       const marker = L.marker([lat, lng], {icon});
-      const popupContent = `
-        <h3 style="text-align: center;">${data.name}</h3>
-        <p style="text-align: justify;">${data.description}</p>
-        <p>Evento: ${data.nameEvent} - Fecha: ${data.dayEvent} - Hora: ${data.hourEvent}</p>
-      `;
+      let popupContent = '';
+      const introContent = `
+        <h3 style="text-align: center; margin-bottom: 10px">${data.name}</h3>
+        <p style="text-align: justify; width: 100%;">${data.description}</p>
+        <div style="width: 100%; height:70px; display:flex; gap:5px; justify-content: center; align-items: center;">
+          <div style="width: 100px;">
+            <img style="width:100%" src="https://www.corazondepuebla.com.mx/wp-content/uploads/2018/10/header-chignahuapan-puebla-mexico-pueblos-magicos.jpg">
+          </div>
+          <div style="width: 100px;">
+            <img style="width:100%" src="https://mexicodesconocidoviajes.mx/wp-content/uploads/2018/09/Puebla-Chignahuapan-festival-luz-y-Vida-DPG_IMG_2006.jpg">
+          </div>
+        </div>`;
+
+        const eventContent = `
+        <div style="margin:10px 0px;">
+          <p><span style="font-weight: bold;">Evento:</span> ${data.nameEvent}</p>
+          <p><span style="font-weight: bold;">Fecha: </span>${data.dayEvent} <span style="font-weight: bold;">Hora: </span>${data.hourEvent}</p>
+        </div>`;
+
+        const footerContent = `
+        <div style="display:flex; gap:5px; justify-content: center; align-items: center; margin-bottom:10px; margin-top:10px;">
+          <button style="width:auto; padding: 5px 10px; cursor:pointer; background: #009CDE;color:#FFF; border-radius:3px;">Ver lugar</button>
+          <button style="width:auto; padding: 5px 10px; cursor:pointer; background: #009CDE;color:#FFF; border-radius:3px;">Trazar ruta</button>
+        </div>`;
+
+      data.nameEvent !== '' ? popupContent = introContent + eventContent + footerContent : popupContent = introContent + footerContent;
 
       marker.bindPopup(popupContent);
       this.markersRest.addLayer(marker);

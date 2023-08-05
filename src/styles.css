@@ -59,6 +59,19 @@ div.leaflet-popup {
   justify-content: center;
 }
 
+.leaflet-popup-content {
+  margin: 13px 10px 0px 10px;
+  padding: 0 10px;
+  width: 450px!important;
+  height: auto!important;
+  max-height: 200px!important;
+  overflow-y: scroll;
+}
+
+.leaflet-popup-content p {
+  margin: 5px 0!important;
+}
+
 
 
 /* ============================================================
@@ -69,6 +82,16 @@ TABLETS
     margin: 0 auto;
     padding: 0 10px;
   }
+  div.leaflet-popup {
+    width: 340px!important;
+  }
+  .leaflet-popup-content-wrapper {
+    width: 340px;
+  }
+  .leaflet-popup-content p {
+    margin: 5px 0!important;
+    font-size: .8rem;
+  }
 }
 
 /* ============================================================
@@ -78,5 +101,18 @@ PHONE
   .container {
     margin: 0 auto;
     padding: 0 10px;
+  }
+  div.leaflet-popup {
+    width: 260px!important;
+  }
+  .leaflet-popup-content-wrapper {
+    width: 260px;
+  }
+  .leaflet-popup-content p {
+    margin: 5px 0!important;
+    font-size: .7rem;
+  }
+  .leaflet-control-attribution {
+    display: none!important;
   }
 }
