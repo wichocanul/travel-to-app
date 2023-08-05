@@ -1,0 +1,59 @@
+h3 {
+  font-weight: lighter;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.people {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.user {
+  width: auto;
+  max-width: 130px;
+  display: flex;
+  align-items: center;
+  background: #ebebeb;
+  border-radius: 20px;
+  padding-right: 10px;
+  overflow: hidden;
+}
+
+.contImg {
+  min-width: 30px;
+  max-width: 30px;
+  min-height: 30px;
+  max-height: 30px;
+  background: #ff0077;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 5px;
+}
+
+.contImg img {
+  width: 100%;
+}
+
+.user p {
+  font-size: .8rem;
+  white-space: nowrap;
+}
+
+.showMore {
+  width: auto;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #ebebeb;
+  cursor: pointer;
+  font-family: secondary;
+  font-size: .8rem;
+  transition: .3s ease all;
+}
+
+.showMore:hover {
+  background: #d1d1d1;
+}
