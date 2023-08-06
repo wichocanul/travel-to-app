@@ -61,7 +61,12 @@
           <img [src]="imgDetail" alt="">
         </div>
         <p>{{ desciptionDetail }}</p>
-        <button [ngStyle]="{'background': colorDetail}">Mostrar Mas</button>
+        <button
+          [ngStyle]="{'background': colorDetail}"
+          [routerLink]="routeDetail"
+        >
+          Mostrar Mas
+        </button>
       </div>
       <div class="image">
         <img [src]="imgDetail" alt="">

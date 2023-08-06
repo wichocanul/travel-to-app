@@ -6,7 +6,8 @@ import { TourismComponent } from './client-app/pages/tourism/tourism/tourism.com
 const routes: Routes = [
   {
     path: '',
-    component: MainComponent
+    component: MainComponent,
+    pathMatch: 'full'
   },
   {
     path: 'home',

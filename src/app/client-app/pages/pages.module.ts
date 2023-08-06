@@ -7,6 +7,7 @@ import { IntroductionComponent } from './home/introduction/introduction.componen
 import { MapComponent } from './home/map/map.component';
 import { ReviewsComponent } from './home/reviews/reviews.component';
 import { TourismComponent } from './tourism/tourism/tourism.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -21,7 +22,8 @@ import { TourismComponent } from './tourism/tourism/tourism.component';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    RouterModule
   ]
 })
 export class PagesModule { }

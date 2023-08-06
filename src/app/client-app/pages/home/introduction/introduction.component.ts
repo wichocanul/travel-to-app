@@ -15,6 +15,7 @@ export class IntroductionComponent {
       description: 'Aqui podras ver todos los lugares turisticos que puedes visitar en chignahuapan, contaras con un mapa para saber en donde se encuentra cada lugar, pusla el boton para conocer todos!!',
       img: './assets/imgs/home/tourism.png',
       color: '#5A1080',
+      route: 'turismo',
     },
     {
       name: 'events',
@@ -22,6 +23,7 @@ export class IntroductionComponent {
       description: 'Quieres divertirte? en esta seccion podras descubrir los eventos mas proximos en Chignahuapan! si quieres reservar un evento en especial nosotros podemos ayudarte con el boleto',
       img: './assets/imgs/home/events.png',
       color: '#26A52F',
+      route: '#',
     },
     {
       name: 'lodging',
@@ -29,6 +31,7 @@ export class IntroductionComponent {
       description: 'Estas por venir y no sabes donde hospedarte? nosotros te dejamos algunas recomendaciones, al igual que la ubicacion del lugar',
       img: './assets/imgs/home/lodging.png',
       color: '#DA007F',
+      route: '#',
     },
     {
       name: 'restaurant',
@@ -36,6 +39,7 @@ export class IntroductionComponent {
       description: 'Si ya te encuentras aqui y no sabes donde comer, aqui te dejaremos los mejores restaurantes de Chignahuapan, aqui podras observar el menu de cada restaurante!',
       img: './assets/imgs/home/restaurant.png',
       color: '#EA7500',
+      route: '#',
     },
     {
       name: 'booking',
@@ -43,12 +47,14 @@ export class IntroductionComponent {
       description: 'Puedes armar tu paquete de lugares turisticos, hospedaje, eventos y restaurantes con nosotros, solo dinos que quieres incluir y nosotros te haremos reservaciones!',
       img: './assets/imgs/home/booking.png',
       color: '#009CDE',
+      route: '#',
     }
   ]
   titleDetail: string = '';
   desciptionDetail: string = '';
   imgDetail: string = '';
   colorDetail: string = '';
+  routeDetail: string = '';
 
   @ViewChildren('asMenuButtons') menuButtons! : QueryList<ElementRef>
 
@@ -99,10 +105,11 @@ export class IntroductionComponent {
   }
 
   setContentDetails(index: number) {
-    this.titleDetail = this.contentDetails[index].title
-    this.desciptionDetail = this.contentDetails[index].description
-    this.imgDetail = this.contentDetails[index].img
-    this.colorDetail = this.contentDetails[index].color
+    this.titleDetail = this.contentDetails[index].title;
+    this.desciptionDetail = this.contentDetails[index].description;
+    this.imgDetail = this.contentDetails[index].img;
+    this.colorDetail = this.contentDetails[index].color;
+    this.routeDetail = this.contentDetails[index].route;
   }
 
 }

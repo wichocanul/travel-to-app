@@ -4,4 +4,5 @@ export interface ProductIntroduction {
   description: string;
   img: string;
   color: string;
+  route: string;
 }
