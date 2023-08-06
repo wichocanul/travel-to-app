@@ -6,6 +6,7 @@ import { SharedModule } from '../shared/shared.module';
 import { IntroductionComponent } from './home/introduction/introduction.component';
 import { MapComponent } from './home/map/map.component';
 import { ReviewsComponent } from './home/reviews/reviews.component';
+import { TourismComponent } from './tourism/tourism/tourism.component';
 
 
 
@@ -15,7 +16,8 @@ import { ReviewsComponent } from './home/reviews/reviews.component';
     HeaderComponent,
     IntroductionComponent,
     MapComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    TourismComponent
   ],
   imports: [
     CommonModule,
