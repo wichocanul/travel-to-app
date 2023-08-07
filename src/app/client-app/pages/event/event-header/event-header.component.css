@@ -1,0 +1,64 @@
+.backgroudCont {
+  width: 100%;
+  padding-top: 80px;
+  background: radial-gradient(circle, rgb(62, 204, 71) 0%, rgb(38, 165, 47) 52%, rgb(17, 112, 23) 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+.contHeader {
+  width: auto;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 2.8rem;
+}
+
+.backgroudCont img {
+  width: auto;
+  height: 300px;
+  bottom: 0px;
+  margin-right: 40px;
+}
+
+/* ============================================================
+TABLETS
+============================================================ */
+@media screen and (min-width: 601px) and (max-width: 912px) {
+  .contHeader {
+    width: auto;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.8rem;
+  }
+}
+
+/* ============================================================
+PHONE
+============================================================ */
+@media screen and (max-width: 600px) {
+  .backgroudCont {
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .contHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  .backgroudCont img {
+    height: 150px;
+    margin: 0 auto 10px auto;
+  }
+}
