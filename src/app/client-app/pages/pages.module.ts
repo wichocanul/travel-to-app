@@ -8,6 +8,7 @@ import { MapComponent } from './home/map/map.component';
 import { ReviewsComponent } from './home/reviews/reviews.component';
 import { TourismComponent } from './tourism/tourism/tourism.component';
 import { RouterModule } from '@angular/router';
+import { TourismHeaderComponent } from './tourism/tourism-header/tourism-header.component';
 
 
 
@@ -18,7 +19,8 @@ import { RouterModule } from '@angular/router';
     IntroductionComponent,
     MapComponent,
     ReviewsComponent,
-    TourismComponent
+    TourismComponent,
+    TourismHeaderComponent
   ],
   imports: [
     CommonModule,
