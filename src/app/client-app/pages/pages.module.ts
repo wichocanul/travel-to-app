@@ -9,6 +9,8 @@ import { ReviewsComponent } from './home/reviews/reviews.component';
 import { TourismComponent } from './tourism/tourism/tourism.component';
 import { RouterModule } from '@angular/router';
 import { TourismHeaderComponent } from './tourism/tourism-header/tourism-header.component';
+import { RestaurantComponent } from './restaurant/restaurant/restaurant.component';
+import { RestaurantHeaderComponent } from './restaurant/restaurant-header/restaurant-header.component';
 
 
 
@@ -20,7 +22,9 @@ import { TourismHeaderComponent } from './tourism/tourism-header/tourism-header.
     MapComponent,
     ReviewsComponent,
     TourismComponent,
-    TourismHeaderComponent
+    TourismHeaderComponent,
+    RestaurantComponent,
+    RestaurantHeaderComponent
   ],
   imports: [
     CommonModule,
