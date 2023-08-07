@@ -11,6 +11,8 @@ import { RouterModule } from '@angular/router';
 import { TourismHeaderComponent } from './tourism/tourism-header/tourism-header.component';
 import { RestaurantComponent } from './restaurant/restaurant/restaurant.component';
 import { RestaurantHeaderComponent } from './restaurant/restaurant-header/restaurant-header.component';
+import { EventComponent } from './event/event/event.component';
+import { EventHeaderComponent } from './event/event-header/event-header.component';
 
 
 
@@ -24,7 +26,9 @@ import { RestaurantHeaderComponent } from './restaurant/restaurant-header/restau
     TourismComponent,
     TourismHeaderComponent,
     RestaurantComponent,
-    RestaurantHeaderComponent
+    RestaurantHeaderComponent,
+    EventComponent,
+    EventHeaderComponent
   ],
   imports: [
     CommonModule,

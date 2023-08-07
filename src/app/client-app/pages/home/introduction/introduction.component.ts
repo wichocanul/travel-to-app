@@ -23,7 +23,7 @@ export class IntroductionComponent {
       description: 'Quieres divertirte? en esta seccion podras descubrir los eventos mas proximos en Chignahuapan! si quieres reservar un evento en especial nosotros podemos ayudarte con el boleto',
       img: './assets/imgs/home/events.png',
       color: '#26A52F',
-      route: '#',
+      route: '/eventos',
     },
     {
       name: 'lodging',
