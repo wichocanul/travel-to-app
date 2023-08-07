@@ -15,7 +15,7 @@ export class IntroductionComponent {
       description: 'Aqui podras ver todos los lugares turisticos que puedes visitar en chignahuapan, contaras con un mapa para saber en donde se encuentra cada lugar, pusla el boton para conocer todos!!',
       img: './assets/imgs/home/tourism.png',
       color: '#5A1080',
-      route: 'turismo',
+      route: '/turismo',
     },
     {
       name: 'events',
@@ -39,7 +39,7 @@ export class IntroductionComponent {
       description: 'Si ya te encuentras aqui y no sabes donde comer, aqui te dejaremos los mejores restaurantes de Chignahuapan, aqui podras observar el menu de cada restaurante!',
       img: './assets/imgs/home/restaurant.png',
       color: '#EA7500',
-      route: '#',
+      route: '/restaurantes',
     },
     {
       name: 'booking',
