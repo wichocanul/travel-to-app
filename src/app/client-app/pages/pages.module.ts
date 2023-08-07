@@ -14,6 +14,7 @@ import { RestaurantHeaderComponent } from './restaurant/restaurant-header/restau
 import { EventComponent } from './event/event/event.component';
 import { EventHeaderComponent } from './event/event-header/event-header.component';
 import { PlacesListComponent } from './components/places-list/places-list.component';
+import { PlaceDetailsComponent } from './components/place-details/place-details.component';
 
 
 
@@ -30,7 +31,8 @@ import { PlacesListComponent } from './components/places-list/places-list.compon
     RestaurantHeaderComponent,
     EventComponent,
     EventHeaderComponent,
-    PlacesListComponent
+    PlacesListComponent,
+    PlaceDetailsComponent
   ],
   imports: [
     CommonModule,

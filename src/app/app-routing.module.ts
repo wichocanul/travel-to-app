@@ -4,6 +4,7 @@ import { MainComponent } from './client-app/pages/home/main/main.component';
 import { TourismComponent } from './client-app/pages/tourism/tourism/tourism.component';
 import { RestaurantComponent } from './client-app/pages/restaurant/restaurant/restaurant.component';
 import { EventComponent } from './client-app/pages/event/event/event.component';
+import { PlaceDetailsComponent } from './client-app/pages/components/place-details/place-details.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'turismo',
     component: TourismComponent
+  },
+  {
+    path: 'turismo/:id',
+    component: PlaceDetailsComponent
   },
   {
     path: 'restaurantes',
