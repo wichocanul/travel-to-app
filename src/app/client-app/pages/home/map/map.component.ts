@@ -54,7 +54,7 @@ export class MapComponent {
       this.mapService.getAllPlaces()
         .subscribe({
           next: (resp) => {
-            this.globalMarkers = resp;
+            this.globalMarkers = resp.data;
             resolve(); // Indicamos que la operación ha terminado
           },
           error: (err) => {

@@ -16,3 +16,8 @@ export interface CoordinatesData {
   lat: number;
   lng: number;
 }
+
+export interface PlaceResponse {
+  message: string;
+  data: PlaceData[];
+}
