@@ -88,7 +88,7 @@ export class MapComponent {
         data.images.length < 4 ? maxImage = data.images.length : maxImage = 4
 
         for (let i = 0; i < maxImage; i++) {
-          setImage += `<div style="width: 100px;">
+          setImage += `<div style="width: 100px; height:auto; overflow:hidden;">
                         <img style="width:100%" src="${data.images[i]}">
                       </div>`;
         }
@@ -96,7 +96,7 @@ export class MapComponent {
         const introContent = `
           <h3 style="text-align: center; margin-bottom: 10px">${data.name}</h3>
           <p style="text-align: justify; width: 100%;">${data.description}</p>
-          <div style="width: 100%; height:70px; display:flex; gap:5px; justify-content: center; align-items: center;">
+          <div style="width: 100%; height:70px; display:flex; gap:5px; justify-content: center; align-items: center; overflow:hidden;">
             ${setImage}
           </div>`;
 
