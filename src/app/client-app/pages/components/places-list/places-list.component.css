@@ -1,0 +1,113 @@
+.placeList {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.placesButtons {
+  width: 40%;
+  height: auto;
+  max-height: 500px;
+  padding: 3px 15px 3px 10px;
+}
+
+.placesButtons .place {
+  width: 100%;
+  background: #dfdfdf;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.place .logo {
+  min-width: 40px;
+  max-width: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  background: #14ac58;
+  border-radius: 5px;
+  margin-right: 10px;
+  border-radius: 5px 0 0 5px;
+  overflow: hidden;
+}
+
+.placeDetails {
+  width: 60%;
+  padding: 10px 15px;
+}
+
+.placeDetails h3 {
+  width: auto;
+  font-size: 2rem;
+  font-family: secondary;
+  font-weight: lighter;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.placeDetails p{
+  font-size: 1rem;
+  text-align: justify;
+  margin: 3px 0;
+}
+
+.placeDetails .contImgs {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.contImgs .showImg {
+  width: 80%;
+  max-width: 1000px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contImgs .imgsSelect {
+  width: 20%;
+  max-width: 150px;
+}
+
+.imgsSelect .carrousel {
+  width: 100%;
+  margin: 5px 0px;
+  cursor: pointer;
+}
+
+.imgsSelect .carrousel img {
+  width: 100%;
+}
+
+.placeDetails span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.buttons button {
+  width: auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: -2px 2px 5px #bebebe;
+  background: #5A1080;
+  color: #fff;
+  transition: .3s ease all;
+}
+
+.buttons button:hover {
+  box-shadow: none;
+  background: #313131;
+}

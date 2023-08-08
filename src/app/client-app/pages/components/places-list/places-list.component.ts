@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, SimpleChanges } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -12,8 +12,14 @@ export class PlacesListComponent {
 
   constructor(private router: Router) { }
 
+  ngOnChanges(changes: SimpleChanges) {
+    if(changes['kindPlace']) {
+      console.log('execute change function')
+    }
+  }
+
   redirectDetailsPlace() {
-    this.router.navigate(['/turismo', '123']);
+    this.router.navigate([`/${this.kindPlace}`, '123']);
   }
 
 }

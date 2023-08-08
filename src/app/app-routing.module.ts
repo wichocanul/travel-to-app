@@ -29,8 +29,16 @@ const routes: Routes = [
     component: RestaurantComponent
   },
   {
+    path: 'restaurantes/:id',
+    component: PlaceDetailsComponent
+  },
+  {
     path: 'eventos',
     component: EventComponent
+  },
+  {
+    path: 'eventos/:id',
+    component: PlaceDetailsComponent
   }
 ];
 
