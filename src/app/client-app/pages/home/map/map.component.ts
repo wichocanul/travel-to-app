@@ -82,16 +82,22 @@ export class MapComponent {
         });
         const marker = L.marker([lat, lng], {icon: iconResp});
         let popupContent = '';
+        let maxImage: number = 0;
+        let setImage = '';
+
+        data.images.length < 4 ? maxImage = data.images.length : maxImage = 4
+
+        for (let i = 0; i < maxImage; i++) {
+          setImage += `<div style="width: 100px;">
+                        <img style="width:100%" src="${data.images[i]}">
+                      </div>`;
+        }
+
         const introContent = `
           <h3 style="text-align: center; margin-bottom: 10px">${data.name}</h3>
           <p style="text-align: justify; width: 100%;">${data.description}</p>
           <div style="width: 100%; height:70px; display:flex; gap:5px; justify-content: center; align-items: center;">
-            <div style="width: 100px;">
-              <img style="width:100%" src="https://www.corazondepuebla.com.mx/wp-content/uploads/2018/10/header-chignahuapan-puebla-mexico-pueblos-magicos.jpg">
-            </div>
-            <div style="width: 100px;">
-              <img style="width:100%" src="https://mexicodesconocidoviajes.mx/wp-content/uploads/2018/09/Puebla-Chignahuapan-festival-luz-y-Vida-DPG_IMG_2006.jpg">
-            </div>
+            ${setImage}
           </div>`;
 
           const eventContent = `
