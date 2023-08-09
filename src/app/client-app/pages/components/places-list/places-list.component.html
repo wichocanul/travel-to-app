@@ -1,28 +1,14 @@
 <div class="container">
 
-  <div class="placeList">
+  <div class="placeList" *ngIf="listPlaces.length > 0">
 
     <div class="placesButtons">
 
-      <div class="place">
+      <div class="place" *ngFor="let place of listPlaces">
         <div class="logo">
           <img src="https://i.pinimg.com/236x/19/35/a2/1935a2c2c881b33068c8fc5edcf1aff2.jpg" alt="test">
         </div>
-        <h4>Club Laguna</h4>
-      </div>
-
-      <div class="place">
-        <div class="logo">
-          <img src="https://i.pinimg.com/236x/19/35/a2/1935a2c2c881b33068c8fc5edcf1aff2.jpg" alt="test">
-        </div>
-        <h4>Carnitas los pepes</h4>
-      </div>
-
-      <div class="place">
-        <div class="logo">
-          <img src="https://i.pinimg.com/236x/19/35/a2/1935a2c2c881b33068c8fc5edcf1aff2.jpg" alt="test">
-        </div>
-        <h4>Rincon Mexicano</h4>
+        <h4>{{ place.name }}</h4>
       </div>
 
     </div>
@@ -69,6 +55,11 @@
       <!-- Add Mapa -->
     </div>
 
+  </div>
+
+  <div class="notPlaces" *ngIf="listPlaces.length == 0">
+    <h6>Por el momento no hay {{ kindPlace }} disponibles</h6>
+    <h6>😢</h6>
   </div>
 
 </div>

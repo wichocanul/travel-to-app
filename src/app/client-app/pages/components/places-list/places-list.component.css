@@ -111,3 +111,15 @@
   box-shadow: none;
   background: #313131;
 }
+
+.notPlaces {
+  width: 100%;
+}
+
+.notPlaces h6 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 3rem;
+  font-family: secondary;
+  font-weight: lighter;
+}

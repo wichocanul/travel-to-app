@@ -1,5 +1,6 @@
 import { Component, Input, SimpleChanges } from '@angular/core';
 import { Router } from '@angular/router';
+import { PlaceData } from 'src/app/client-app/interfaces/places.interface';
 import { MapService } from 'src/app/client-app/services/map/map.service';
 
 @Component({
@@ -8,6 +9,8 @@ import { MapService } from 'src/app/client-app/services/map/map.service';
   styleUrls: ['./places-list.component.css']
 })
 export class PlacesListComponent {
+
+  listPlaces: PlaceData[] = [];
 
   @Input() kindPlace: string = '';
 
@@ -29,7 +32,7 @@ export class PlacesListComponent {
     this.mapService.kindPlaces(this.kindPlace)
       .subscribe({
         next: (resp) => {
-          console.log(resp);
+          this.listPlaces = resp.data;
         },
         error: (err) => {
           console.error(err);

@@ -19,11 +19,11 @@ export class MapService {
     return this.http.get<PlaceResponse>( url );
   }
 
-  kindPlaces(kindPlace: string):Observable<PlaceData[]> {
+  kindPlaces(kindPlace: string):Observable<PlaceResponse> {
     if(kindPlace == 'eventos') { kindPlace = 'evento'}
     if(kindPlace == 'restaurantes') { kindPlace = 'restaurante'}
     const url = `${this.baseUrl}/places?type=${kindPlace}`;
 
-    return this.http.get<PlaceData[]>(url);
+    return this.http.get<PlaceResponse>(url);
   }
 }
