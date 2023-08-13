@@ -5,6 +5,7 @@ import { TourismComponent } from './client-app/pages/tourism/tourism/tourism.com
 import { RestaurantComponent } from './client-app/pages/restaurant/restaurant/restaurant.component';
 import { EventComponent } from './client-app/pages/event/event/event.component';
 import { PlaceDetailsComponent } from './client-app/pages/components/place-details/place-details.component';
+import { LodgingComponent } from './client-app/pages/lodging/lodging/lodging.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,14 @@ const routes: Routes = [
     component: PlaceDetailsComponent
   },
   {
+    path: 'eventos',
+    component: EventComponent
+  },
+  {
+    path: 'eventos/:id',
+    component: PlaceDetailsComponent
+  },
+  {
     path: 'restaurantes',
     component: RestaurantComponent
   },
@@ -33,11 +42,11 @@ const routes: Routes = [
     component: PlaceDetailsComponent
   },
   {
-    path: 'eventos',
-    component: EventComponent
+    path: 'hospedaje',
+    component: LodgingComponent
   },
   {
-    path: 'eventos/:id',
+    path: 'hospedaje/:id',
     component: PlaceDetailsComponent
   }
 ];

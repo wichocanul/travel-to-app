@@ -15,6 +15,8 @@ import { EventComponent } from './event/event/event.component';
 import { EventHeaderComponent } from './event/event-header/event-header.component';
 import { PlacesListComponent } from './components/places-list/places-list.component';
 import { PlaceDetailsComponent } from './components/place-details/place-details.component';
+import { LodgingComponent } from './lodging/lodging/lodging.component';
+import { LodgingHeaderComponent } from './lodging/lodging-header/lodging-header.component';
 
 
 
@@ -32,7 +34,9 @@ import { PlaceDetailsComponent } from './components/place-details/place-details.
     EventComponent,
     EventHeaderComponent,
     PlacesListComponent,
-    PlaceDetailsComponent
+    PlaceDetailsComponent,
+    LodgingComponent,
+    LodgingHeaderComponent
   ],
   imports: [
     CommonModule,
